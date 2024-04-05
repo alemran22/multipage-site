@@ -6,29 +6,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 
 <body class="max-w-7xl mx-auto">
     <main class="bg-white w-full px-28">
 
-        <!-- categories -->
-        <section class="">
+        <!-- flash sale -->
+        <section class="py-8">
             <!-- title -->
             <div class="py-14">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
-                    <p class="text-[#DB4444] text-base font-semibold">Categories</p>
+                    <p class="text-[#DB4444] text-base font-semibold poppins">Today’s</p>
                 </div>
-                <div class="flex flex-row justify-between items-center">
-                    <h4 class="font-semibold text-4xl">Browse By Category</h4>
-                    <div class="flex flex-row">
+                <div class="flex flex-row justify-between items-center w-full">
+                    <div class="flex flex-row items-end justify-between w-6/12">
+                        <h4 class="font-semibold text-4xl">Flash Sales</h4>
+                        <!-- countdown -->
+                        <div class="flex flex-row items-end gap-3">
+                            <!-- 1 -->
+                            <div class="flex flex-col items-center gap-1">
+                                <p class="poppins text-xs font-medium">Days</p>
+                                <h6 class="text-2xl font-bold">03</h6>
+                            </div>
+                            <span class="text-[#E07575] text-3xl">:</span>
+                            <!-- 2 -->
+                            <div class="flex flex-col items-center gap-1">
+                                <p class="poppins text-xs font-medium">Hours</p>
+                                <h6 class="text-2xl font-bold">23</h6>
+                            </div>
+                            <span class="text-[#E07575] text-3xl">:</span>
+                            <!-- 3 -->
+                            <div class="flex flex-col items-center gap-1">
+                                <p class="poppins text-xs font-medium">Minutes</p>
+                                <h6 class="text-2xl font-bold">19</h6>
+                            </div>
+                            <span class="text-[#E07575] text-3xl">:</span>
+                            <!-- 4 -->
+                            <div class="flex flex-col items-center gap-1">
+                                <p class="poppins text-xs font-medium">Seconds</p>
+                                <h6 class="text-2xl font-bold">56</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2">
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector (1).svg" alt=""
                                 class="h-4 w-4">
                         </div>
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector.svg" alt=""
                                 class="h-4 w-4"></div>
                     </div>
+                </div>
+            </div>
+            <!-- carts -->
+            <div class="flex flex-row gap-6">
+                <!-- cart 1 -->
+                <div class="w-3/12 relative">
+                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-40%</div>
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                class="w-4 h-4"></button>
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                class="w-4 h-4"></button>
+                    </div>
+                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md">
+                        <img src="./assets/image/g92-2-500x500 1.svg" alt="">
+                    </a>
+                    <div class="mt-4 ml-2">
+                        <h6 class="font-medium text-base poppins">HAVIT HV-G92 Gamepad</h6>
+                        <div class="flex flex-row items-center text-base font-medium gap-2">
+                            <p class="text-[#DB4444]">$120</p>
+                            <p class="line-through text-[#808080]">$160</p>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <div class="flex flex-row">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                            </div>
+                            <p class="text-[#808080]">(88)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart 2 -->
+                <div class="w-3/12 relative">
+                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%</div>
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                class="w-4 h-4"></button>
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                class="w-4 h-4"></button>
+                    </div>
+                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[42px] rounded-t-md">
+                        <img src="./assets/image/ak-900-01-500x500 1.svg" alt="">
+                    </a>
+                    <button class="bg-black w-full text-white py-1 rounded-b">Add To Cart</button>
+                    <div class="mt-4 ml-2">
+                        <h6 class="font-medium text-base poppins">AK-900 Wired Keyboard</h6>
+                        <div class="flex flex-row items-center text-base font-medium gap-2">
+                            <p class="text-[#DB4444]">$900</p>
+                            <p class="line-through text-[#808080]">$1160</p>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <div class="flex flex-row">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
+                            </div>
+                            <p class="text-[#808080]">(75)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart 3 -->
+                <div class="w-3/12 relative">
+                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-30%</div>
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                class="w-4 h-4"></button>
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                class="w-4 h-4"></button>
+                    </div>
+                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[44px] rounded-md">
+                        <img src="./assets/image/g27cq4-500x500 1.svg" alt="">
+                    </a>
+                    <div class="mt-4 ml-2">
+                        <h6 class="font-medium text-base poppins">IPS LCD Gaming Monitor</h6>
+                        <div class="flex flex-row items-center text-base font-medium gap-2">
+                            <p class="text-[#DB4444]">$370</p>
+                            <p class="line-through text-[#808080]">$400</p>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <div class="flex flex-row">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                            </div>
+                            <p class="text-[#808080]">(99)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart 4 -->
+                <div class="w-3/12 relative">
+                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-30%</div>
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                class="w-4 h-4"></button>
+                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                class="w-4 h-4"></button>
+                    </div>
+                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[19px] rounded-md">
+                        <img src="./assets/image/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.svg" alt="">
+                    </a>
+                    <div class="mt-4 ml-2">
+                        <h6 class="font-medium text-base poppins">S-Series Comfort Chair</h6>
+                        <div class="flex flex-row items-center text-base font-medium gap-2">
+                            <p class="text-[#DB4444]">$375</p>
+                            <p class="line-through text-[#808080]">$400</p>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <div class="flex flex-row">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
+                            </div>
+                            <p class="text-[#808080]">(99)</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex flex-row justify-center items-center">
+                <a href=""
+                    class="text-base font-medium py-4 px-12 bg-[#DB4444] hover:bg-[#a73232] text-white rounded w-fit self-center mt-14">View
+                    All Products</a>
+            </div>
+        </section>
+        <!-- categories -->
+        <section class="">
+            <!-- title -->
+            <div class="py-14">
+                <div class="flex flex-row items-center gap-4 mb-5">
+                    <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
+                    <p class="text-[#DB4444] text-base font-semibold poppins">Categories</p>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                    <h4 class="font-semibold text-4xl">Browse By Category</h4>
+                    <div class="flex flex-row gap-2">
+                        <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector (1).svg" alt=""
+                                class="h-4 w-4">
+                        </div>
+                        <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector.svg" alt=""
+                                class="h-4 w-4"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- carts -->
+            <div class="flex flex-row gap-7">
+                <!-- cart 1 -->
+                <div
+                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white">
+                    <img src="./assets/icon/Category-CellPhone.svg" alt="">
+                    <p class="text-base poppins">Phones</p>
+                </div>
+                <!-- cart 2 -->
+                <div
+                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white">
+                    <img src="./assets/icon/Category-Computer.svg" alt="">
+                    <p class="text-base poppins">Computers</p>
+                </div>
+                <!-- cart 3 -->
+                <div
+                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white">
+                    <img src="./assets/icon/Category-SmartWatch.svg" alt="">
+                    <p class="text-base poppins">SmartWatch</p>
+                </div>
+                <!-- cart 4 -->
+                <div
+                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded bg-[#DB4444] text-white">
+                    <img src="./assets/icon/Category-Camera.svg" alt="">
+                    <p class="text-base poppins">Camera</p>
+                </div>
+                <!-- cart 5 -->
+                <div
+                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white">
+                    <img src="./assets/icon/Category-Headphone.svg" alt="">
+                    <p class="text-base poppins">HeadPhones</p>
+                </div>
+                <!-- cart 6 -->
+                <div
+                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white">
+                    <img src="./assets/icon/Category-Gamepad.svg" alt="">
+                    <p class="text-base poppins">Gaming</p>
                 </div>
             </div>
         </section>
@@ -39,7 +267,7 @@
             <div class="py-14">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
-                    <p class="text-[#DB4444] text-base font-semibold">This Month</p>
+                    <p class="text-[#DB4444] text-base font-semibold poppins">This Month</p>
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <h4 class="font-semibold text-4xl">Best Selling Products</h4>
@@ -64,8 +292,8 @@
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">The north coat</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
-                            <p class="text-[#DB4444]">$260</p>
-                            <p class="line-through text-[#808080]">$360</p>
+                            <p class="text-[#DB4444] poppins">$260</p>
+                            <p class="line-through text-[#808080] poppins">$360</p>
                         </div>
                         <div class="flex flex-row items-center">
                             <div class="flex flex-row">
@@ -76,7 +304,7 @@
                                 <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                 <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                             </div>
-                            <p class="text-[#808080]">(35)</p>
+                            <p class="text-[#808080] poppins">(35)</p>
                         </div>
                     </div>
                 </div>
@@ -95,8 +323,8 @@
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">Gucci duffle bag</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
-                            <p class="text-[#DB4444]">$960</p>
-                            <p class="line-through text-[#808080]">$1160</p>
+                            <p class="text-[#DB4444] poppins">$960</p>
+                            <p class="line-through text-[#808080] poppins">$1160</p>
                         </div>
                         <div class="flex flex-row items-center">
                             <div class="flex flex-row">
@@ -125,8 +353,8 @@
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">RGB liquid CPU Cooler</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
-                            <p class="text-[#DB4444]">$160</p>
-                            <p class="line-through text-[#808080]">$170</p>
+                            <p class="text-[#DB4444] poppins">$160</p>
+                            <p class="line-through text-[#808080] poppins">$170</p>
                         </div>
                         <div class="flex flex-row items-center">
                             <div class="flex flex-row">
@@ -137,7 +365,7 @@
                                 <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                 <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                             </div>
-                            <p class="text-[#808080]">(65)</p>
+                            <p class="text-[#808080] poppins">(65)</p>
                         </div>
                     </div>
                 </div>
@@ -156,7 +384,7 @@
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">Small BookSelf</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
-                            <p class="text-[#DB4444]">$360</p>
+                            <p class="text-[#DB4444] poppins">$360</p>
                         </div>
                         <div class="flex flex-row items-center">
                             <div class="flex flex-row">
@@ -167,7 +395,7 @@
                                 <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                 <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                             </div>
-                            <p class="text-[#808080]">(65)</p>
+                            <p class="text-[#808080] poppins">(65)</p>
                         </div>
                     </div>
                 </div>
@@ -180,25 +408,25 @@
                 <div class="flex flex-row justify-between">
                     <div class="w-6/12 flex flex-col gap-8 bg-black p-12">
                         <div class="flex flex-row gap-5 items-center">
-                            <p class="text-[#00ff66] font-semibold text-2xl">Categories</p>
+                            <p class="text-[#00ff66] font-semibold text-2xl poppins">Categories</p>
                         </div>
                         <h1 class="text-white font-semibold text-5xl">Enhance Your <br>Music Experience</h1>
                         <div class="flex flex-row gap-5">
                             <div class="bg-white flex flex-col  items-center h-16 w-16 p-2 rounded-full">
                                 <h3 class="text-base font-semibold">23</h3>
-                                <p class="text-black text-xs">Hours</p>
+                                <p class="text-black text-xs poppins">Hours</p>
                             </div>
                             <div class="bg-white flex flex-col  items-center h-16 w-16 p-2 rounded-full">
                                 <h3 class="text-base font-semibold">05</h3>
-                                <p class="text-black text-xs">Days</p>
+                                <p class="text-black text-xs poppins">Days</p>
                             </div>
                             <div class="bg-white flex flex-col  items-center h-16 w-16 p-2 rounded-full">
                                 <h3 class="text-base font-semibold">59</h3>
-                                <p class="text-black text-xs">Minutes</p>
+                                <p class="text-black text-xs poppins">Minutes</p>
                             </div>
                             <div class="bg-white flex flex-col  items-center h-16 w-16 p-2 rounded-full">
                                 <h3 class="text-base font-semibold">35</h3>
-                                <p class="text-black text-xs">Seconds</p>
+                                <p class="text-black text-xs poppins">Seconds</p>
                             </div>
                         </div>
                         <button class="py-3 w-fit px-10 text-white rounded bg-[#00ff66]">
@@ -219,11 +447,11 @@
             <div class="py-14">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
-                    <p class="text-[#DB4444] text-base font-semibold">Our Products</p>
+                    <p class="text-[#DB4444] text-base font-semibold poppins">Our Products</p>
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <h4 class="font-semibold text-4xl">Explore Our Products</h4>
-                    <div class="flex flex-row">
+                    <div class="flex flex-row gap-2">
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector (1).svg" alt=""
                                 class="h-4 w-4"></div>
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector.svg" alt=""
@@ -249,7 +477,7 @@
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Breed Dry Dog Food</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
-                                <p>$100</p>
+                                <p class="poppins">$100</p>
                                 <div class="flex flex-row">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
@@ -258,7 +486,7 @@
                                     <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(35)</p>
+                                <p class="poppins">(35)</p>
                             </div>
                         </div>
                     </div>
@@ -286,7 +514,7 @@
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(95)</p>
+                                <p class="poppins">(95)</p>
                             </div>
                         </div>
                     </div>
@@ -304,7 +532,7 @@
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">ASUS FHD Gaming Laptop</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
-                                <p>$700</p>
+                                <p class="poppins">$700</p>
                                 <div class="flex flex-row">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
@@ -313,7 +541,7 @@
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(325)</p>
+                                <p class="poppins">(325)</p>
                             </div>
                         </div>
                     </div>
@@ -332,7 +560,7 @@
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Curology Product Set</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
-                                <p>$500</p>
+                                <p class="poppins">$500</p>
                                 <div class="flex flex-row">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
@@ -341,7 +569,7 @@
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(145)</p>
+                                <p class="poppins">(145)</p>
                             </div>
                         </div>
                     </div>
@@ -365,7 +593,7 @@
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Kids Electric Car</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
-                                <p>$960</p>
+                                <p class="poppins">$960</p>
                                 <div class="flex flex-row">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
@@ -374,7 +602,7 @@
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(65)</p>
+                                <p class="poppins">(65)</p>
                             </div>
                             <div class="flex flex-row gap-1 mt-4">
                                 <img src="./assets/icon/Ellipse 10.svg" alt="" class="bg-red-600 rounded-full w-5 h-5">
@@ -399,7 +627,7 @@
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Jr. Zoom Soccer Cleats</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
-                                <p>$1160</p>
+                                <p class="poppins">$1160</p>
                                 <div class="flex flex-row">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
@@ -408,7 +636,7 @@
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(35)</p>
+                                <p class="poppins">(35)</p>
                             </div>
                             <div class="flex flex-row gap-1 mt-4">
                                 <img src="./assets/icon/Ellipse 10.svg" alt=""
@@ -435,7 +663,7 @@
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">GP11 Shooter USB Gamepad</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
-                                <p>$660</p>
+                                <p class="poppins">$660</p>
                                 <div class="flex flex-row">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
@@ -444,7 +672,7 @@
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(55)</p>
+                                <p class="poppins">(55)</p>
                             </div>
                             <div class="flex flex-row gap-1 mt-4">
                                 <img src="./assets/icon/Ellipse 10.svg" alt="" class="bg-black rounded-full w-5 h-5">
@@ -470,7 +698,7 @@
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Quilted Satin Jacket</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
-                                <p>$660</p>
+                                <p class="poppins">$660</p>
                                 <div class="flex flex-row">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
@@ -479,7 +707,7 @@
                                     <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                     <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                 </div>
-                                <p>(55)</p>
+                                <p class="poppins">(55)</p>
                             </div>
                             <div class="flex flex-row gap-1 mt-4">
                                 <img src="./assets/icon/Ellipse 10.svg" alt="" class="bg-black rounded-full w-5 h-5">
@@ -502,7 +730,7 @@
             <div class="py-14">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
-                    <p class="text-[#DB4444] text-base font-semibold">Featured</p>
+                    <p class="text-[#DB4444] text-base font-semibold poppins">Featured</p>
                 </div>
                 <h4 class="font-semibold text-4xl">New Arrival</h4>
             </div>
@@ -512,7 +740,7 @@
                     style="background-image: url('./assets/image/ps5-slim-goedkope-playstation_large\ 1.svg');">
                     <div class="text-white bottom-6 left-6 absolute">
                         <h5 class="font-semibold text-2xl">PlayStation 5</h5>
-                        <p class="text-sm">Black and White version of the PS5 <br> coming out on sale.</p>
+                        <p class="text-sm poppins">Black and White version of the PS5 <br> coming out on sale.</p>
                         <a href="" class="text-base font-medium underline">Shop Now</a>
                     </div>
                 </div>
@@ -521,7 +749,7 @@
                         style="background-image: url('./assets/image/attractive-woman-wearing-hat-posing-black-background\ 1.svg');">
                         <div class="text-white bottom-6 left-6 absolute">
                             <h5 class="font-semibold text-2xl">Women’s Collections</h5>
-                            <p class="text-sm">Featured woman collections that give you another vibe.</p>
+                            <p class="text-sm poppins">Featured woman collections that give you another vibe.</p>
                             <a href="" class="text-base font-medium underline">Shop Now</a>
                         </div>
                     </div>
@@ -530,7 +758,7 @@
                             style="background-image: url('./assets/image/69-694768_amazon-echo-png-clipart-transparent-amazon-echo-png 1.svg');">
                             <div class="text-white bottom-6 left-6 absolute">
                                 <h5 class="font-semibold text-2xl">Speakers</h5>
-                                <p class="text-sm">Amazon wireless speakers</p>
+                                <p class="text-sm poppins">Amazon wireless speakers</p>
                                 <a href="" class="text-base font-medium underline">Shop Now</a>
                             </div>
                         </div>
@@ -538,7 +766,7 @@
                             style="background-image: url('./assets/image/652e82cd70aa6522dd785109a455904c.svg');">
                             <div class="text-white bottom-6 left-6 absolute">
                                 <h5 class="font-semibold text-2xl">Perfume</h5>
-                                <p class="text-sm">GUCCI INTENSE OUD EDP</p>
+                                <p class="text-sm poppins">GUCCI INTENSE OUD EDP</p>
                                 <a href="" class="text-base font-medium underline">Shop Now</a>
                             </div>
                         </div>
@@ -553,21 +781,21 @@
                 <img src="./assets/icon/Services.svg" alt="">
                 <div class="text-center">
                     <h5 class="font-bold text-lg leading-7">FREE AND FAST DELIVERY</h5>
-                    <p class="text-sm font-normal">Free delivery for all orders over $140</p>
+                    <p class="text-sm font-normal poppins">Free delivery for all orders over $140</p>
                 </div>
             </div>
             <div class="flex flex-col items-center gap-4">
                 <img src="./assets/icon/Services (1).svg" alt="">
                 <div class="text-center">
                     <h5 class="font-bold text-lg leading-7">24/7 CUSTOMER SERVICE</h5>
-                    <p class="text-sm font-normal">Friendly 24/7 customer support</p>
+                    <p class="text-sm font-normal poppins">Friendly 24/7 customer support</p>
                 </div>
             </div>
             <div class="flex flex-col items-center gap-4">
                 <img src="./assets/icon/Services (2).svg" alt="">
                 <div class="text-center">
                     <h5 class="font-bold text-lg leading-7">MONEY BACK GUARANTEE</h5>
-                    <p class="text-sm font-normal">We reurn money within 30 days</p>
+                    <p class="text-sm font-normal poppins">We reurn money within 30 days</p>
                 </div>
             </div>
         </section>
@@ -580,7 +808,7 @@
             <div class="w-fit flex flex-col gap-5">
                 <h3 class="text-3xl font-bold text-white ">Exclusive</h3>
                 <h4 class="text-white text-xl font-semibold">Subscribe</h4>
-                <p class="text-white text-[16px]">Get 10% of your first order</p>
+                <p class="text-white text-[16px] poppins">Get 10% of your first order</p>
                 <div class="relative">
                     <input class="bg-transparent border-2 border-[#FFF] py-3 pl-4 pr-6 rounded-md outline-none"
                         type="text" name="" id="" placeholder="Enter your Email">
@@ -590,9 +818,9 @@
             <div class="w-fit flex flex-col gap-5">
 
                 <h4 class="text-white text-2xl font-semibold">Support</h4>
-                <p class="text-white text-base">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
-                <p class="text-white ">exclusive@gmail.com</p>
-                <p class="text-white ">+88015-88888-9999</p>
+                <p class="text-white text-base poppins">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
+                <p class="text-white poppins">exclusive@gmail.com</p>
+                <p class="text-white poppins">+88015-88888-9999</p>
 
 
             </div>
@@ -619,7 +847,7 @@
             <div class="w-fit flex flex-col gap-5">
 
                 <h4 class="text-white text-xl font-medium">Download App</h4>
-                <p class="text-[#afafaf] text-xs font-medium">Save $3 with App New User Only</p>
+                <p class="text-[#afafaf] text-xs font-medium poppins">Save $3 with App New User Only</p>
                 <div class="flex flex-row gap-3">
                     <div class=""><img src="./assets/image/Qr Code.svg" class="h-20" alt=""></div>
                     <div class="flex flex-col gap-2">
@@ -638,7 +866,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-[#3D3D3D] text-xl pt-4 text-center border-t border-[#141414]">&copy; Copyright @alemran22
+        <p class="text-[#3D3D3D] text-xl pt-4 text-center border-t border-[#141414] poppins">&copy; Copyright @alemran22
             2024. All
             right reserved.</p>
     </footer>
