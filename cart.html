@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="max-w-7xl mx-auto">
+    <!-- sale adv -->
+    <div class="bg-black text-white poppins flex flex-row py-3 px-28 justify-end items-center text-sm gap-[106px]">
+        <div class="flex flex-row gap-2">
+            <p class="">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
+            <button class="border-b border-white font-semibold border-none outline-none"> ShopNow</button>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-1">
+            <p>English</p>
+            <img src="./assets/icon/down-arrow.svg" alt="" class="h-2">
+        </div>
+    </div>
+    <!-- header -->
+    <header class="w-full px-28 flex flex-row justify-between pt-10 pb-4 border-b-2">
+        <!-- left -->
+        <div class="w-[60%] flex flex-row justify-between items-center">
+            <h4 class="text-2xl font-bold">Exclusive</h4>
+            <div class="flex flex-row gap-6">
+                <a href="./index.html"
+                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Home</a>
+                <a href="./contact.html"
+                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Contact</a>
+                <a href="./about.html"
+                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">About</a>
+                <a href="./sign_up.html"
+                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Sign Up</a>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="w-[30%] flex flex-row justify-between items-center gap-2">
+            <div class="w-9/12 rounded-sm relative bg-[#F5F5F5]">
+                <input type="text" name="" id="" placeholder="What are you looking for?"
+                    class="poppins text-xs outline-none py-[7px] pl-4 w-full bg-transparent">
+                <img src="./assets/icon/Vector (2)_h.svg" alt="" class="h-3 w-3 absolute right-2 top-2 cursor-pointer">
+            </div>
+            <div class="w-3/12 flex flex-row justify-around items-center">
+
+                <a href="./wishlist.html" class="relative">
+                    <img src="./assets/icon/Vector (1)_h.svg" alt="" class="h-5">
+                    <div
+                        class="absolute -top-1.5 -right-0.5 bg-[#DB4444] py-[1px] px-1 rounded-full text-center text-white font-medium text-[8px]">
+                        4</div>
+                </a>
+                <a href="" class="relative">
+                    <img src="./assets/icon/Cart1 with buy.svg" alt="" class="h-6">
+                    <div
+                        class="absolute -top-1 -right-1 bg-[#DB4444] py-[1px] px-1 rounded-full text-center text-white font-medium text-[8px]">
+                        2</div>
+                </a>
+
+            </div>
+            <div class="flex justify-center items-center">
+                <button class=" poppins relative">
+                    <img src="./assets/icon/user2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!--  wishlist section -->
+    <section class="px-28 py-8 flex flex-col gap-10">
+        <!--  -->
+        <div class="flex flex-row justify-between items-center">
+            <!-- heading -->
+            <div class="py-3">
+                <p class=""><span class="text-[#808080]">Home /</span> Cart</p>
+            </div>
+        </div>
+        <!-- pattern -->
+        <div class="flex flex-row justify-between border rounded-md shadow-lg px-7 py-5">
+            <p class="">Product</p>
+            <p class="">Price</p>
+            <p class="">Quantity</p>
+            <p class="">Subtotal</p>
+        </div>
+        <!-- pattern 1 -->
+        <div class="flex flex-row justify-between items-center border rounded-md shadow-lg px-7 py-5">
+            <div class="relative flex flex-row items-center gap-4">
+                <img src="./assets/image/g27cq4-500x500 1.svg" alt="" class="h-10">
+                <p class="">LCD Monitor</p>
+                <div class="absolute bg-red-600 rounded-full px-1 -top-1.5 -left-1.5">
+                    <p class="text-white text-xs">X</p>
+                </div>
+            </div>
+            <p class="">$650</p>
+            <div class="flex flex-row items-center border gap-2 px-3 py-1 rounded-md">
+                <p class="">01</p>
+                <div class="flex flex-col">
+                    <img src="./assets/icon/Drop-Up-Small.svg" alt="" class="">
+                    <img src="./assets/icon/Drop-Down-Small.svg" alt="" class="">
+                </div>
+            </div>
+            <p class="">$650</p>
+        </div>
+        <!-- pattern 2-->
+        <div class="flex flex-row justify-between items-center border rounded-md shadow-lg px-7 py-5">
+            <div class="flex flex-row items-center gap-4">
+                <img src="./assets/image/g92-2-500x500 1.svg" alt="" class="h-10">
+                <p class="">H1 Gamepad</p>
+            </div>
+            <p class="">$550</p>
+            <div class="flex flex-row items-center border gap-2 px-3 py-1 rounded-md">
+                <p class="">02</p>
+                <div class="flex flex-col">
+                    <img src="./assets/icon/Drop-Up-Small.svg" alt="" class="">
+                    <img src="./assets/icon/Drop-Down-Small.svg" alt="" class="">
+                </div>
+            </div>
+            <p class="">$1100</p>
+        </div>
+        <!-- select button -->
+        <div class="flex flex-row justify-between">
+            <button class="border-2 px-10 py-4 font-semibold rounded-md">Return To Shop</button>
+            <button class="border-2 px-10 py-4 font-semibold rounded-md">Update Cart</button>
+        </div>
+    </section>
+    <!-- checkout -->
+    <section class="px-28 py-10 flex flex-row justify-between gap-5">
+        <!-- left -->
+        <div class="flex flex-row w-7/12">
+            <div class="flex flex-row justify-between gap-5">
+                <div class="flex flex-row">
+                    <div class="">
+                        <input type="text" placeholder="Coupon Code" class="border-2 py-4 pl-3 outline-none rounded-md">
+                    </div>
+                </div>
+                <div class="">
+                    <button class="px-10 py-4 rounded-md bg-[#db4444] text-white">Apply Coupon</button>
+                </div>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="flex flex-col gap-6 w-5/12 rounded-md border-2 border-black p-4">
+            <div class="flex flex-col gap-6">
+                <p class="text-xl font-semibold">Cart Total</p>
+                <div class="flex flex-row justify-between">
+                    <p class="">Subtotal:</p>
+                    <p class="">$1750</p>
+                </div>
+                <hr class="border-[1px]">
+            </div>
+            <div class="">
+                <div class="flex flex-row justify-between">
+                    <p class="">Shipping:</p>
+                    <p class="">Free</p>
+                </div>
+                <hr class="border-[1px]">
+            </div>
+            <div class="flex flex-row justify-center">
+                <a href="./checkout.html"><button class="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-10 rounded">
+                    Procees to checkout
+                </button></a>
+            </div>
+        </div>
+    </section>
+    <!-- footer section  -->
+    <footer class="w-full bg-black pt-20 mt-20">
+        <div class="flex flex-row items-start justify-between  px-28 mb-16">
+            <!-- exclusice -->
+            <div class="w-fit flex flex-col gap-4">
+                <h3 class="text-2xl font-bold text-white">Exclusive</h3>
+                <h4 class="text-white text-xl font-medium pt-3">Subscribe</h4>
+                <p class="text-white text-sm">Get 10% of your first order</p>
+                <div class="relative">
+                    <input class="bg-transparent border-2 border-[#FFF] py-2 pl-3 rounded-md outline-none" type="text"
+                        name="" id="" placeholder="Enter your Email">
+                    <img src="./images/footer/send.svg" alt="" class="absolute top-2 right-4">
+                </div>
+            </div>
+            <!-- support -->
+            <div class="w-fit flex flex-col gap-4">
+                <h4 class="text-white text-xl">Support</h4>
+                <p class="text-white pt-3">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
+                <p class="text-white">exclusive@gmail.com</p>
+                <p class="text-white">+88015-88888-9999</p>
+            </div>
+            <!-- account -->
+            <div class="w-fit flex flex-col gap-3">
+                <h4 class="text-white text-xl">Account</h4>
+                <a href="" class="text-white pt-3">My Account</a>
+                <a href="" class="text-white">Login/Register</a>
+                <a href="" class="text-white">Cart</a>
+                <a href="" class="text-white">Wishlist</a>
+                <a href="" class="text-white">Shop</a>
+            </div>
+            <!-- quick link -->
+            <div class="w-fit flex flex-col gap-2">
+                <h4 class="text-white text-xl">Quick Link</h4>
+                <a href="" class="text-white pt-3">Privacy Policy</a>
+                <a href="" class="text-white">Terms Of Use</a>
+                <a href="" class="text-white">FAQ</a>
+                <a href="" class="text-white">Contact</a>
+            </div>
+            <!-- download app -->
+            <div class="w-fit flex flex-col gap-5">
+                <h4 class="text-white text-xl">Download App</h4>
+                <p class="text-[#afafaf] text-xs">Save $3 with App New User Only</p>
+                <div class="flex flex-row gap-3">
+                    <div class=""><img src="./images/footer/Qr Code.svg" class="h-24" alt=""></div>
+                    <div class="flex flex-col gap-3">
+                        <a href=""><img src="./images/footer/GooglePlay.svg" class="w-32" alt=""></a>
+                        <a href=""><img src="./images/footer/appstore.svg" class="w-32" alt=""></a>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-5">
+                    <img src="./images/footer/Facebook.svg" alt="" class="">
+                    <img src="./images/footer/Twitter.svg" alt="" class="">
+                    <img src="./images/footer/instagram.svg" alt="" class="">
+                    <img src="./images/footer/linkedin.svg" alt="" class="">
+                </div>
+            </div>
+        </div>
+        <p class="text-[#3D3D3D] text-xl text-center py-5 border-t border-[#141414]">&copy; Copyright @devmanirul 2024.
+            All
+            right reserved.</p>
+    </footer>
+</body>
+
+</html>
