@@ -23,24 +23,27 @@
             <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
             <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
         </div>
-        <div class="flex flex-row items-center justify-center gap-1">
-            <p class=" poppins">English</p>
-            <img src="./assets/icon/down-arrow.svg" alt="" class="h-2">
+        <div class="">
+            <select name="language" id="language" class=" bg-transparent poppins font-medium cursor-pointer">
+                <option value="English" class="poppins font-medium text-black">English</option>
+                <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
+            </select>
         </div>
     </div>
     <!-- header -->
     <header class="w-full px-28 flex flex-row justify-between pt-10 pb-4 border-b-2">
         <div class="w-[60%] flex flex-row justify-between items-center">
-            <h4 class="text-2xl font-bold">Exclusive</h4>
+            <a href="./index.html" class="text-2xl font-bold">Exclusive</a>
             <div class="flex flex-row gap-6">
                 <a href="./index.html"
-                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Home</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Home</a>
                 <a href="./contact.html"
-                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Contact</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Contact</a>
                 <a href="./about.html"
-                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">About</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">About</a>
                 <a href="./sign_up.html"
-                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Sign Up</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Sign
+                    Up</a>
             </div>
         </div>
         <div class="w-[30%] flex flex-row justify-between items-center gap-2">
@@ -50,7 +53,7 @@
                 <img src="./assets/icon/Vector (2)_h.svg" alt="" class="h-3 w-3 absolute right-2 top-2 cursor-pointer">
             </div>
             <div class="w-3/12 flex flex-row justify-around items-center">
-                <a href=""><img src="./assets/icon/Vector (1)_h.svg" alt="" class="h-4"></a>
+                <a href="./wishlist.html"><img src="./assets/icon/Vector (1)_h.svg" alt="" class="h-4"></a>
                 <a href="./cart.html"><img src="./assets/icon/Cart1 with buy.svg" alt="" class="h-5"></a>
             </div>
         </div>
@@ -78,7 +81,7 @@
 
                     </div>
                     <!-- big image -->
-                    <div class="w-[70%] flex flex-row justify-center items-center bg-[#F5F5F5] p-8 cursor-pointer">
+                    <div class="w-[70%] flex flex-row justify-center items-center bg-[#F5F5F5] p-8 cursor-zoom-in">
                         <img src="./assets/image/image 63.svg" alt="">
                     </div>
                 </div>
@@ -117,23 +120,20 @@
                     <div class="flex flex-row items-center gap-3">
                         <p class="text-xl pr-1">Size:</p>
                         <div
-                            class="border border-black  p-2 rounded w-8 h-8 flex flex-row items-center justify-center hover:bg-[#DB4444] hover:text-white  hover:border-none cursor-pointer">
+                            class="border border-black  p-2 rounded w-8 h-8 flex flex-row items-center justify-center ">
                             <p class="poppins text-sm">XS</p>
                         </div>
-                        <div
-                            class=" border border-black p-2 rounded w-8 h-8 flex flex-row items-center justify-center hover:bg-[#DB4444] hover:text-white hover:border-none cursor-pointer">
+                        <div class=" border border-black p-2 rounded w-8 h-8 flex flex-row items-center justify-center">
                             <p class="poppins text-sm">S</p>
                         </div>
                         <div
-                            class=" border border-black p-2 rounded w-8 h-8 flex flex-row items-center justify-center hover:bg-[#DB4444] hover:text-white hover:border-none cursor-pointer">
+                            class="p-2 rounded w-8 h-8 flex flex-row items-center justify-center bg-[#db4444] text-white">
                             <p class="poppins text-sm">M</p>
                         </div>
-                        <div
-                            class=" border border-black p-2 rounded w-8 h-8 flex flex-row items-center justify-center hover:bg-[#DB4444] hover:text-white hover:border-none cursor-pointer">
+                        <div class=" border border-black p-2 rounded w-8 h-8 flex flex-row items-center justify-center">
                             <p class="poppins text-sm">L</p>
                         </div>
-                        <div
-                            class=" border border-black p-2 rounded w-8 h-8 flex flex-row items-center justify-center hover:bg-[#DB4444] hover:text-white hover:border-none cursor-pointer">
+                        <div class=" border border-black p-2 rounded w-8 h-8 flex flex-row items-center justify-center">
                             <p class="poppins text-sm">XL</p>
                         </div>
                     </div>
@@ -166,7 +166,8 @@
                             </div>
                             <div class="">
                                 <h6 class="poppins text-base font-medium leading-loose">Free Delivery</h6>
-                                <p class="text-xs font-medium underline poppins">Enter your postal code for Delivery
+                                <p class="text-xs font-medium underline poppins cursor-pointer">Enter your postal code
+                                    for Delivery
                                     Availability</p>
                             </div>
                         </div>
@@ -353,7 +354,7 @@
                     <input
                         class="bg-transparent border-2 border-[#FFF] py-3 pl-4 pr-6 rounded-md outline-none text-white"
                         type="text" name="" id="" placeholder="Enter your Email">
-                    <img src="./assets/icon/icon-send.svg" alt="" class="absolute top-3.5 right-3 h-6">
+                    <img src="./assets/icon/icon-send.svg" alt="" class="absolute top-3.5 right-3 h-6 cursor-pointer">
                 </div>
             </div>
             <!-- col 2 -->
@@ -378,7 +379,7 @@
                 <a href="" class="text-white text-base">Privacy Policy</a>
                 <a href="" class="text-white text-base">Terms Of Use</a>
                 <a href="" class="text-white text-base">FAQ</a>
-                <a href="" class="text-white text-base">Contact</a>
+                <a href="./contact.html" class="text-white text-base">Contact</a>
             </div>
             <!-- col 5 -->
             <div class="w-fit flex flex-col gap-5">

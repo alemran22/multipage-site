@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,24 +23,26 @@
             <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
             <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
         </div>
-        <div class="flex flex-row items-center justify-center gap-1">
-            <p class=" poppins">English</p>
-            <img src="./assets/icon/down-arrow.svg" alt="" class="h-2">
+        <div class="">
+            <select name="language" id="language" class=" bg-transparent poppins font-medium cursor-pointer">
+                <option value="English" class="poppins font-medium text-black">English</option>
+                <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
+            </select>
         </div>
     </div>
     <!-- header -->
     <header class="w-full px-28 flex flex-row justify-between pt-10 pb-4 border-b-2">
         <div class="w-[60%] flex flex-row justify-between items-center">
-            <h4 class="text-2xl font-bold">Exclusive</h4>
+            <a href="./index.html" class="text-2xl font-bold">Exclusive</a>
             <div class="flex flex-row gap-6">
                 <a href="./index.html"
-                    class="text-base poppins underline hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Home</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Home</a>
                 <a href="./contact.html"
-                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Contact</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Contact</a>
                 <a href="./about.html"
-                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">About</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">About</a>
                 <a href="./sign_up.html"
-                    class="text-base poppins hover:bg-[#e5e5e5] duration-300 transition px-2 py-1 rounded">Sign Up</a>
+                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Sign Up</a>
             </div>
         </div>
         <div class="w-[30%] flex flex-row justify-between items-center gap-2">
@@ -56,11 +58,11 @@
         </div>
     </header>
     <!-- main -->
-    <main class="bg-white w-full py-16">
+    <main class="bg-white w-full">
         <!-- Top -->
         <section class="flex flex-row w-full gap-7 px-28">
             <!-- left -->
-            <div class="flex flex-col w-3/12 gap-3 border-r-2">
+            <div class="flex flex-col w-3/12 gap-3 border-r-2 pt-10">
                 <div class="flex flex-row gap-8">
                     <a href="" class="text-base poppins">Woman's Fashion</a>
                     <img src="./assets/icon/Vector_h.svg" alt="" class="w-2 cursor-pointer">
@@ -78,7 +80,7 @@
                 <a href="#" class="text-base poppins">Health & Beauty</a>
             </div>
             <!-- right -->
-            <div class="relative w-full flex flex-row justify-center">
+            <div class="relative w-full flex flex-row justify-center pt-10">
                 <div class="flex flex-row justify-between">
                     <div class="flex flex-col gap-4 bg-black py-12 pl-10">
                         <div class="flex flex-row gap-5 items-center">
@@ -155,21 +157,26 @@
             <!-- carts -->
             <div class="flex flex-row gap-6 w-full">
                 <!-- cart 1 -->
-                <div class="w-3/12 relative group">
-                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-40%</div>
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12">
+                    <div class=" relative group">
+                        <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-40%
+                        </div>
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md">
+                            <img src="./assets/image/g92-2-500x500 1.svg" alt="" class="h-36 p-4">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md">
-                        <img src="./assets/image/g92-2-500x500 1.svg" alt="" class="h-36 p-4">
-                    </a>
-                    <button
-                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center">Add
-                        To
-                        Cart</button>
                     <div class="mt-4 ml-2">
                         <h6 class="font-medium text-base poppins">HAVIT HV-G92 Gamepad</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -190,20 +197,26 @@
                     </div>
                 </div>
                 <!-- cart 2 -->
-                <div class="w-3/12 relative group">
-                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%</div>
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12 ">
+                    <div class="relative group">
+                        <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%
+                        </div>
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[42px] rounded-md">
+                            <img src="./assets/image/ak-900-01-500x500 1.svg" alt="" class="h-32 p-4">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[42px] rounded-md">
-                        <img src="./assets/image/ak-900-01-500x500 1.svg" alt="" class="h-32 p-4">
-                    </a>
-                    <button
-                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center">Add
-                        To Cart</button>
                     <div class="mt-4 ml-2">
                         <h6 class="font-medium text-base poppins">AK-900 Wired Keyboard</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -224,21 +237,26 @@
                     </div>
                 </div>
                 <!-- cart 3 -->
-                <div class="w-3/12 relative group">
-                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-30%</div>
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12 ">
+                    <div class="relative group">
+                        <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-30%
+                        </div>
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[44px] rounded-md">
+                            <img src="./assets/image/g27cq4-500x500 1.svg" alt="" class="h-[124px] p-4">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[44px] rounded-md">
-                        <img src="./assets/image/g27cq4-500x500 1.svg" alt="" class="h-[124px] p-4">
-                    </a>
-                    <button
-                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center">Add
-                        To
-                        Cart</button>
                     <div class="mt-4 ml-2">
                         <h6 class="font-medium text-base poppins">IPS LCD Gaming Monitor</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -259,22 +277,27 @@
                     </div>
                 </div>
                 <!-- cart 4 -->
-                <div class="w-3/12 relative group">
-                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-25%</div>
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12 ">
+                    <div class="relative group">
+                        <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-25%
+                        </div>
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[19px] rounded-md">
+                            <img src="./assets/image/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.svg" alt=""
+                                class="h-[174px] p-4">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[19px] rounded-md">
-                        <img src="./assets/image/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.svg" alt=""
-                            class="h-[174px] p-4">
-                    </a>
-                    <button
-                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center">Add
-                        To
-                        Cart</button>
                     <div class="mt-4 ml-2">
                         <h6 class="font-medium text-base poppins">S-Series Comfort Chair</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -417,17 +440,25 @@
             <!-- carts -->
             <div class="flex flex-row gap-6">
                 <!-- cart 1 -->
-                <div class="w-3/12 relative">
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12 ">
+                    <div class="relative group">
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px]">
+                            <img src="./assets/image/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.svg"
+                                alt="">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px]">
-                        <img src="./assets/image/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.svg"
-                            alt="">
-                    </a>
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">The north coat</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -448,17 +479,25 @@
                     </div>
                 </div>
                 <!-- cart 2 -->
-                <div class="w-3/12 relative">
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12 ">
+                    <div class="relative group">
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[42px]">
+                            <img src="./assets/image/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.svg"
+                                alt="" class="w-44 h-32">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[42px]">
-                        <img src="./assets/image/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.svg"
-                            alt="" class="w-44 h-32">
-                    </a>
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">Gucci duffle bag</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -479,16 +518,24 @@
                     </div>
                 </div>
                 <!-- cart 3 -->
-                <div class="w-3/12 relative">
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12 ">
+                    <div class="relative group">
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[50px]">
+                            <img src="./assets/image/gammaxx-l240-argb-1-500x500 1.svg" alt="" class="h-28 w-44">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[50px]">
-                        <img src="./assets/image/gammaxx-l240-argb-1-500x500 1.svg" alt="" class="h-28 w-44">
-                    </a>
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">RGB liquid CPU Cooler</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -509,17 +556,26 @@
                     </div>
                 </div>
                 <!-- cart 4 -->
-                <div class="w-3/12 relative">
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
+                <div class="w-3/12 ">
+                    <div class="relative group">
+                        <div class="flex flex-col gap-1 absolute top-2 right-2">
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                    class="w-4 h-4"></button>
+                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                    class="w-4 h-4"></button>
+                        </div>
+                        <a href="./pro_details.html"
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[18px]">
+                            <img src="./assets/image/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.svg" alt=""
+                                class="h-44 w-32">
+                        </a>
+                        <button
+                            class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                            To
+                            Cart
+                        </button>
                     </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[18px]">
-                        <img src="./assets/image/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.svg" alt=""
-                            class="h-44 w-32">
-                    </a>
+
                     <div class="mt-4 ml-2">
                         <h6 class="font-semibold text-base">Small BookSelf</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -550,22 +606,27 @@
                         <div class="flex flex-row gap-5 items-center">
                             <p class="text-[#00ff66] font-semibold text-2xl poppins">Categories</p>
                         </div>
-                        <h1 class="text-white font-semibold text-5xl leading-tight">Enhance Your <br>Music Experience</h1>
+                        <h1 class="text-white font-semibold text-5xl leading-tight">Enhance Your <br>Music Experience
+                        </h1>
                         <!-- timer -->
                         <div class="flex flex-row gap-4">
-                            <div class="bg-white flex flex-col justify-center items-center h-16 w-16 p-1 rounded-full">
+                            <div
+                                class="bg-white flex flex-col justify-center items-center h-[70px] w-[70px] p-1 rounded-full">
                                 <h3 class="text-base font-semibold">23</h3>
                                 <p class="text-black text-xs poppins">Hours</p>
                             </div>
-                            <div class="bg-white flex flex-col justify-center items-center h-16 w-16 p-1 rounded-full">
+                            <div
+                                class="bg-white flex flex-col justify-center items-center h-[70px] w-[70px] p-1 rounded-full">
                                 <h3 class="text-base font-semibold">05</h3>
                                 <p class="text-black text-xs poppins">Days</p>
                             </div>
-                            <div class="bg-white flex flex-col justify-center items-center h-16 w-16 p-1 rounded-full">
+                            <div
+                                class="bg-white flex flex-col justify-center items-center h-[70px] w-[70px] p-1 rounded-full">
                                 <h3 class="text-base font-semibold">59</h3>
                                 <p class="text-black text-xs poppins">Minutes</p>
                             </div>
-                            <div class="bg-white flex flex-col justify-center items-center h-16 w-16 p-1 rounded-full">
+                            <div
+                                class="bg-white flex flex-col justify-center items-center h-[70px] w-[70px] p-1 rounded-full">
                                 <h3 class="text-base font-semibold">35</h3>
                                 <p class="text-black text-xs poppins ">Seconds</p>
                             </div>
@@ -606,18 +667,25 @@
                 <!-- cart upper -->
                 <div class="flex flex-row gap-6">
                     <!-- cart 1 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
+                    <div class="w-3/12">
+                        <div class=" relative group">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/71RdoeXxtrL 1.svg" alt="" class="py-4 h-[212px] w-[146px]">
+                            </a>
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
+
                         </div>
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/71RdoeXxtrL 1.svg" alt="">
-                        </a>
-                        <button class="bg-black w-full text-white rounded-b py-1 hidden group-hover:flex justify-center items-center">Add To
-                            Cart</button>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Breed Dry Dog Food</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -635,19 +703,26 @@
                         </div>
                     </div>
                     <!-- cart 2 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
+                    <div class="w-3/12 ">
+                        <div class="relative group ">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/eos-250d-03-500x500 1.svg" alt=""
+                                    class="h-[212px] w-[146px] py-6">
+                            </a>
+
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
                         </div>
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/eos-250d-03-500x500 1.svg" alt="" class="h-[180px] w-[146px]">
-                        </a>
-                        <button class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center">Add
-                            To
-                            Cart</button>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">CANON EOS DSLR Camera</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -665,18 +740,25 @@
                         </div>
                     </div>
                     <!-- cart 3 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
+                    <div class="w-3/12 ">
+                        <div class="relative group">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/ideapad-gaming-3i-01-500x500 1.svg" alt=""
+                                    class=" h-[212px] w-[146px]">
+                            </a>
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
                         </div>
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/ideapad-gaming-3i-01-500x500 1.svg" alt="">
-                        </a>
-                        <button class="bg-black w-full text-white rounded-b py-1 hidden group-hover:flex justify-center items-center">Add To
-                            Cart</button>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">ASUS FHD Gaming Laptop</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -694,19 +776,25 @@
                         </div>
                     </div>
                     <!-- cart 4 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
+                    <div class="w-3/12 ">
+                        <div class="relative group">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/curology-j7pKVQrTUsM-unsplash 1.svg" alt=""
+                                    class="py-4 h-[212px] w-[146px]">
+                            </a>
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
                         </div>
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/curology-j7pKVQrTUsM-unsplash 1.svg" alt=""
-                                class="h-[180px] w-[159px]">
-                        </a>
-                        <button class="bg-black w-full text-white rounded-b py-1 hidden group-hover:flex justify-center items-center">Add To
-                            Cart</button>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Curology Product Set</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -727,21 +815,27 @@
                 <!-- cart lower -->
                 <div class="flex flex-row gap-6">
                     <!-- cart 5 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
+                    <div class="w-3/12 ">
+                        <div class="relative group">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
+                            <div class="absolute bg-[#00FF66] py-1 px-2 text-white text-xs left-2 top-2 rounded-md">NEW
+                            </div>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/New-Mercedes-Benz-Gtr-Licensed-Ride-on-Car-Kids-Electric-Toy-Car 1.svg"
+                                    alt="" class="h-[212px] w-[146px]">
+                            </a>
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
                         </div>
-                        <div class="absolute bg-[#00FF66] py-1 px-2 text-white text-xs left-2 top-2 rounded-md">NEW
-                        </div>
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/New-Mercedes-Benz-Gtr-Licensed-Ride-on-Car-Kids-Electric-Toy-Car 1.svg"
-                                alt="" class="h-[180px] w-[140px]">
-                        </a>
-                        <button class="bg-black w-full text-white rounded-b py-1 hidden group-hover:flex justify-center items-center">Add To
-                            Cart</button>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Kids Electric Car</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -765,19 +859,25 @@
 
                     </div>
                     <!-- cart 6 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
-                        </div>
+                    <div class="w-3/12 ">
+                        <div class="relative group">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
 
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/Copa_Sense 1.svg" alt="" class="h-[180px] w-[140px]">
-                        </a>
-                        <button class="bg-black w-full text-white rounded-b py-1 hidden group-hover:flex justify-center items-center">Add To
-                            Cart</button>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/Copa_Sense 1.svg" alt="" class="h-[212px] w-[146px]">
+                            </a>
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
+                        </div>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Jr. Zoom Soccer Cleats</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -802,20 +902,26 @@
 
                     </div>
                     <!-- cart 7 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
+                    <div class="w-3/12 ">
+                        <div class="relative group">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
+                            <div class="absolute bg-[#00FF66] py-1 px-2 text-white text-xs left-2 top-2 rounded-md">NEW
+                            </div>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/GP11_PRD3 1.svg" alt="" class="h-[212px] w-[146px]">
+                            </a>
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
                         </div>
-                        <div class="absolute bg-[#00FF66] py-1 px-2 text-white text-xs left-2 top-2 rounded-md">NEW
-                        </div>
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/GP11_PRD3 1.svg" alt="" class="h-[180px] w-[140px]">
-                        </a>
-                        <button class="bg-black w-full text-white rounded-b py-1 hidden group-hover:flex justify-center items-center">Add To
-                            Cart</button>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">GP11 Shooter USB Gamepad</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -839,20 +945,26 @@
 
                     </div>
                     <!-- cart 8 -->
-                    <div class="w-3/12 relative group">
-                        <div class="flex flex-col gap-1 absolute top-2 right-2">
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                    class="w-4 h-4"></button>
-                            <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                    class="w-4 h-4"></button>
-                        </div>
+                    <div class="w-3/12 ">
+                        <div class="relative group">
+                            <div class="flex flex-col gap-1 absolute top-2 right-2">
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
+                                        class="w-4 h-4"></button>
+                                <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
+                                        class="w-4 h-4"></button>
+                            </div>
 
-                        <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
-                            <img src="./assets/image/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.svg"
-                                alt="" class="h-[180px] w-[140px]">
-                        </a>
-                        <button class="bg-black w-full text-white rounded-b py-1 hidden group-hover:flex justify-center items-center">Add To
-                            Cart</button>
+                            <a href="./pro_details.html"
+                                class="bg-[#F5F5F5] flex flex-col justify-center items-center p-4">
+                                <img src="./assets/image/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.svg"
+                                    alt="" class="h-[212px] w-[146px]">
+                            </a>
+                            <button
+                                class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                                To
+                                Cart
+                            </button>
+                        </div>
                         <div class="mt-4 ml-2">
                             <h6 class="font-semibold text-base">Quilted Satin Jacket</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
@@ -973,7 +1085,7 @@
                     <input
                         class="bg-transparent border-2 border-[#FFF] py-3 pl-4 pr-6 rounded-md outline-none text-white"
                         type="text" name="" id="" placeholder="Enter your Email">
-                    <img src="./assets/icon/icon-send.svg" alt="" class="absolute top-3.5 right-3 h-6">
+                    <img src="./assets/icon/icon-send.svg" alt="" class="absolute top-3.5 right-3 h-6 cursor-pointer">
                 </div>
             </div>
             <!-- col 2 -->
@@ -998,7 +1110,7 @@
                 <a href="" class="text-white text-base">Privacy Policy</a>
                 <a href="" class="text-white text-base">Terms Of Use</a>
                 <a href="" class="text-white text-base">FAQ</a>
-                <a href="" class="text-white text-base">Contact</a>
+                <a href="./contact.html" class="text-white text-base">Contact</a>
             </div>
             <!-- col 5 -->
             <div class="w-fit flex flex-col gap-5">
