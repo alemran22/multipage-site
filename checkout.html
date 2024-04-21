@@ -16,20 +16,24 @@
 </head>
 
 
-<body class="max-w-7xl mx-auto">
+<body class="">
     <!-- sale adv -->
-    <div class="bg-black text-white flex flex-row py-3 px-28 justify-end items-center text-sm gap-[106px]">
-        <div class="flex flex-row gap-2">
-            <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
-            <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
-        </div>
-        <div class="flex flex-row items-center justify-center gap-1">
-            <p class=" poppins">English</p>
-            <img src="./assets/icon/down-arrow.svg" alt="" class="h-2">
+    <div class="bg-black">
+        <div class="max-w-7xl mx-auto text-white flex flex-row py-3 px-28 justify-end items-center text-sm gap-[106px]">
+            <div class="flex flex-row gap-2">
+                <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
+                <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
+            </div>
+            <div class="">
+                <select name="language" id="language" class=" bg-transparent poppins font-medium cursor-pointer">
+                    <option value="English" class="poppins font-medium text-black">English</option>
+                    <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
+                </select>
+            </div>
         </div>
     </div>
     <!-- header -->
-    <header class="w-full px-28 flex flex-row justify-between pt-10 pb-4 border-b-2">
+    <header class="max-w-7xl mx-auto w-full px-28 flex flex-row justify-between pt-10 pb-4 border-b-2">
         <!-- left -->
         <div class="w-[60%] flex flex-row justify-between items-center">
             <a href="./index.html" class="text-2xl font-bold">Exclusive</a>
@@ -76,7 +80,7 @@
         </div>
     </header>
 
-    <main class="bg-white w-full pt-16 pb-20">
+    <main class="bg-white max-w-7xl mx-auto pt-16 ">
         <section class="px-28 flex flex-col gap-10">
             <!--  -->
             <div class="flex flex-row justify-between items-center">
@@ -216,72 +220,74 @@
             </div>
         </section>
 
-
-    </main>
-    <!-- footer -->
-    <footer class="w-full bg-black pt-10">
-        <div class="flex flex-row items-start justify-between px-28 mb-10">
-            <!-- col 1 -->
-            <div class="w-fit flex flex-col gap-5">
-                <h3 class="text-3xl font-bold text-white ">Exclusive</h3>
-                <h4 class="text-white text-xl font-semibold">Subscribe</h4>
-                <p class="text-white text-[16px] poppins">Get 10% of your first order</p>
-                <div class="relative">
-                    <input
-                        class="bg-transparent border-2 border-[#FFF] py-3 pl-4 pr-6 rounded-md outline-none text-white"
-                        type="text" name="" id="" placeholder="Enter your Email">
-                    <img src="./assets/icon/icon-send.svg" alt="" class="absolute top-3.5 right-3 h-6 cursor-pointer">
-                </div>
-            </div>
-            <!-- col 2 -->
-            <div class="w-fit flex flex-col gap-5">
-                <h4 class="text-white text-2xl font-semibold">Support</h4>
-                <p class="text-white text-base poppins">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
-                <p class="text-white poppins">exclusive@gmail.com</p>
-                <p class="text-white poppins">+88015-88888-9999</p>
-            </div>
-            <!-- col 3 -->
-            <div class="w-fit flex flex-col gap-4">
-                <h4 class="text-white text-2xl font-semibold">Account</h4>
-                <a href="./profile.html" class="text-white text-base">My Account</a>
-                <a href="./login.html" class="text-white text-base">Login/Register</a>
-                <a href="./cart.html" class="text-white text-base">Cart</a>
-                <a href="./wishlist.html" class="text-white text-base">Wishlist</a>
-                <a href="./checkout.html" class="text-white text-base">Shop</a>
-            </div>
-            <!-- col 4 -->
-            <div class="w-fit flex flex-col gap-4">
-                <h4 class="text-white text-2xl font-semibold">Quick Link</h4>
-                <a href="" class="text-white text-base">Privacy Policy</a>
-                <a href="" class="text-white text-base">Terms Of Use</a>
-                <a href="" class="text-white text-base">FAQ</a>
-                <a href="./contact.html" class="text-white text-base">Contact</a>
-            </div>
-            <!-- col 5 -->
-            <div class="w-fit flex flex-col gap-5">
-                <h4 class="text-white text-xl font-medium">Download App</h4>
-                <p class="text-[#afafaf] text-xs font-medium poppins">Save $3 with App New User Only</p>
-                <div class="flex flex-row gap-3">
-                    <div class=""><img src="./assets/image/Qr Code.svg" class="h-20" alt=""></div>
-                    <div class="flex flex-col gap-2">
-                        <a href=""><img
-                                src="./assets/image/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.svg"
-                                class="w-28" alt=""></a>
-                        <a href=""><img src="./assets/image/AppStore.svg" class="w-28" alt=""></a>
+        <!-- footer -->
+        <footer class="w-full bg-black pt-10 mt-20">
+            <div class="flex flex-row items-start justify-between px-28 mb-10">
+                <!-- col 1 -->
+                <div class="w-fit flex flex-col gap-5">
+                    <h3 class="text-3xl font-bold text-white ">Exclusive</h3>
+                    <h4 class="text-white text-xl font-semibold">Subscribe</h4>
+                    <p class="text-white text-[16px] poppins">Get 10% of your first order</p>
+                    <div class="relative">
+                        <input
+                            class="bg-transparent border-2 border-[#FFF] py-3 pl-4 pr-6 rounded-md outline-none text-white"
+                            type="text" name="" id="" placeholder="Enter your Email">
+                        <img src="./assets/icon/icon-send.svg" alt=""
+                            class="absolute top-3.5 right-3 h-6 cursor-pointer">
                     </div>
                 </div>
-                <div class="flex flex-row gap-7">
-                    <img src="./asset/Icon-Facebook.svg" alt="" class="h-8">
-                    <img src="./asset/Icon-Twitter.svg" alt="" class="h-8">
-                    <img src="./asset/icon-instagram.svg" alt="" class="h-8">
-                    <img src="./asset/Icon-Linkedin.svg" alt="" class="h-8">
+                <!-- col 2 -->
+                <div class="w-fit flex flex-col gap-5">
+                    <h4 class="text-white text-2xl font-semibold">Support</h4>
+                    <p class="text-white text-base poppins">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
+                    <p class="text-white poppins">exclusive@gmail.com</p>
+                    <p class="text-white poppins">+88015-88888-9999</p>
+                </div>
+                <!-- col 3 -->
+                <div class="w-fit flex flex-col gap-4">
+                    <h4 class="text-white text-2xl font-semibold">Account</h4>
+                    <a href="./profile.html" class="text-white text-base">My Account</a>
+                    <a href="./login.html" class="text-white text-base">Login/Register</a>
+                    <a href="./cart.html" class="text-white text-base">Cart</a>
+                    <a href="./wishlist.html" class="text-white text-base">Wishlist</a>
+                    <a href="./checkout.html" class="text-white text-base">Shop</a>
+                </div>
+                <!-- col 4 -->
+                <div class="w-fit flex flex-col gap-4">
+                    <h4 class="text-white text-2xl font-semibold">Quick Link</h4>
+                    <a href="" class="text-white text-base">Privacy Policy</a>
+                    <a href="" class="text-white text-base">Terms Of Use</a>
+                    <a href="" class="text-white text-base">FAQ</a>
+                    <a href="./contact.html" class="text-white text-base">Contact</a>
+                </div>
+                <!-- col 5 -->
+                <div class="w-fit flex flex-col gap-5">
+                    <h4 class="text-white text-xl font-medium">Download App</h4>
+                    <p class="text-[#afafaf] text-xs font-medium poppins">Save $3 with App New User Only</p>
+                    <div class="flex flex-row gap-3">
+                        <div class=""><img src="./assets/image/Qr Code.svg" class="h-20" alt=""></div>
+                        <div class="flex flex-col gap-2">
+                            <a href=""><img
+                                    src="./assets/image/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.svg"
+                                    class="w-28" alt=""></a>
+                            <a href=""><img src="./assets/image/AppStore.svg" class="w-28" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-7">
+                        <img src="./asset/Icon-Facebook.svg" alt="" class="h-8">
+                        <img src="./asset/Icon-Twitter.svg" alt="" class="h-8">
+                        <img src="./asset/icon-instagram.svg" alt="" class="h-8">
+                        <img src="./asset/Icon-Linkedin.svg" alt="" class="h-8">
+                    </div>
                 </div>
             </div>
-        </div>
-        <p class="text-[#3D3D3D] text-xl py-2 text-center border-t border-[#141414] poppins">&copy; Copyright @alemran22
-            2024. All
-            right reserved.</p>
-    </footer>
+            <p class="text-[#3D3D3D] text-xl py-2 text-center border-t border-[#141414] poppins">&copy; Copyright
+                @alemran22
+                2024. All
+                right reserved.</p>
+        </footer>
+    </main>
+
 </body>
 
 </html>
