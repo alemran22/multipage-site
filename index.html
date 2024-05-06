@@ -19,9 +19,11 @@
 <body class="">
     <!-- sale adv -->
     <div class="bg-black">
-        <div class="max-w-7xl mx-auto text-white flex flex-row py-3 px-28 justify-end items-center text-sm gap-[106px]">
-            <div class="flex flex-row gap-2">
-                <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
+        <div
+            class="max-w-7xl mx-auto text-white flex flex-col lg:flex-row py-3 lg:px-28 justify-end items-center text-sm lg:gap-[106px]">
+            <div class="flex flex-col lg:flex-row gap-2">
+                <p class="px-2 text-wrap poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                </p>
                 <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
             </div>
             <div class="">
@@ -34,10 +36,11 @@
         </div>
     </div>
     <!-- header -->
-    <header class="max-w-7xl mx-auto w-full px-28 flex flex-row justify-between pt-10 pb-4 border-b-2">
-        <div class="w-[60%] flex flex-row justify-between items-center">
+    <header class="max-w-7xl mx-auto w-full lg:px-28 px-2 flex flex-row justify-between pt-10 pb-4 border-b-2">
+        <!-- left -->
+        <div class="lg:w-[60%] w-full flex flex-row justify-between items-center">
             <a href="./index.html" class="text-2xl font-bold">Exclusive</a>
-            <div class="flex flex-row gap-6">
+            <div class="hidden lg:flex flex-row gap-6">
                 <a href="./index.html"
                     class="text-base poppins underline duration-300 transition px-2 py-1 rounded">Home</a>
                 <a href="./contact.html"
@@ -47,8 +50,13 @@
                 <a href="./sign_up.html"
                     class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Sign Up</a>
             </div>
+            <!-- menu icon -->
+            <button class="lg:hidden block">
+                <img src="./assets/icon/more (3).png" class="w-8 h-8" alt="">
+            </button>
         </div>
-        <div class="w-[30%] flex flex-row justify-between items-center gap-2">
+        <!-- right -->
+        <div class="w-[30%] lg:flex flex-row justify-between items-center gap-2 hidden">
             <div class="w-9/12 rounded-sm relative bg-[#F5F5F5]">
                 <input type="text" name="" id="" placeholder="What are you looking for?"
                     class="poppins text-xs outline-none py-[7px] pl-4 w-full bg-transparent">
@@ -63,10 +71,10 @@
     <!-- main -->
     <main class="max-w-7xl mx-auto bg-white w-full">
         <!-- Top -->
-        <section class="flex flex-row w-full gap-7 px-28">
+        <section class="flex flex-col lg:flex-row w-full gap-7 px-4 lg:px-28">
             <!-- left -->
-            <div class="flex flex-col w-3/12 gap-3 border-r-2 pt-10">
-                <div class="flex flex-row gap-8">
+            <div class="flex flex-col lg:w-3/12 gap-2 lg:gap-3 lg:border-r-2 pt-4 lg:pt-10">
+                <div class="flex flex-row gap-9">
                     <a href="" class="text-base poppins">Woman's Fashion</a>
                     <img src="./assets/icon/Vector_h.svg" alt="" class="w-2 cursor-pointer">
                 </div>
@@ -84,15 +92,16 @@
             </div>
             <!-- right -->
             <div class="relative w-full flex flex-row justify-center pt-10">
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-col lg:flex-row justify-between">
                     <!--  text-->
 
-                    <div class="flex flex-col gap-4 bg-black py-12 pl-10">
+                    <div class="flex flex-col gap-4 bg-black py-4 lg:py-12 pl-4 lg:pl-10">
                         <div class="flex flex-row gap-5 items-center">
                             <img src="./assets/icon/1200px-Apple_gray_logo 1.svg" alt="" class="">
                             <h3 class="text-white">iPhone 14 Series</h3>
                         </div>
-                        <h1 class="text-white font-semibold text-5xl leading-tight">Up to 10% <br>off Voucher</h1>
+                        <h1 class="text-white font-semibold text-3xl lg:text-5xl leading-tight">Up to 10% <br>off
+                            Voucher</h1>
                         <div class="flex flex-row gap-3 items-center">
                             <button class="text-white border-b poppins">Shop Now</button>
                             <img src="./assets/icon/Vector (3)_h.svg" alt="" class="cursor-pointer h-4 w-4">
@@ -113,16 +122,17 @@
             </div>
         </section>
         <!-- flash sale -->
-        <section class="py-16 px-28">
+        <section class="py-4 px-4 lg:py-16 lg:px-28">
             <!-- title -->
-            <div class="py-14 ">
+            <div class="lg:py-14 py-6">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
                     <p class="text-[#DB4444] text-base font-semibold poppins">Today’s</p>
                 </div>
                 <div class="flex flex-row justify-between items-center w-full">
-                    <div class="flex flex-row items-end justify-between w-6/12">
-                        <h4 class="font-semibold text-4xl">Flash Sales</h4>
+                    <div
+                        class="flex flex-col lg:flex-row lg:items-end lg:justify-between w-full lg:w-6/12 gap-2 lg:gap-0">
+                        <h4 class="font-semibold text-3xl lg:text-4xl">Flash Sales</h4>
                         <!-- countdown -->
                         <div class="flex flex-row items-end gap-3">
                             <!-- 1 -->
@@ -151,7 +161,7 @@
 
                         </div>
                     </div>
-                    <div class="flex flex-row gap-2">
+                    <div class="lg:flex flex-row gap-2 hidden">
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector (1).svg" alt=""
                                 class="h-4 w-4">
                         </div>
@@ -161,9 +171,9 @@
                 </div>
             </div>
             <!-- carts -->
-            <div class="flex flex-row gap-6 w-full">
+            <div class="flex flex-col lg:flex-row gap-6 w-full">
                 <!-- cart 1 -->
-                <div class="w-3/12">
+                <div class="lg:w-3/12">
                     <div class=" relative group">
                         <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-40%
                         </div>
@@ -183,7 +193,7 @@
                             Cart
                         </button>
                     </div>
-                    <div class="mt-4 ml-2">
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
                         <h6 class="font-medium text-base poppins">HAVIT HV-G92 Gamepad</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
                             <p class="text-[#DB4444]">$120</p>
@@ -203,7 +213,7 @@
                     </div>
                 </div>
                 <!-- cart 2 -->
-                <div class="w-3/12 ">
+                <div class="lg:w-3/12 ">
                     <div class="relative group">
                         <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%
                         </div>
@@ -223,7 +233,7 @@
                             Cart
                         </button>
                     </div>
-                    <div class="mt-4 ml-2">
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
                         <h6 class="font-medium text-base poppins">AK-900 Wired Keyboard</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
                             <p class="text-[#DB4444]">$900</p>
@@ -243,7 +253,7 @@
                     </div>
                 </div>
                 <!-- cart 3 -->
-                <div class="w-3/12 ">
+                <div class="lg:w-3/12 ">
                     <div class="relative group">
                         <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-30%
                         </div>
@@ -263,7 +273,7 @@
                             Cart
                         </button>
                     </div>
-                    <div class="mt-4 ml-2">
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
                         <h6 class="font-medium text-base poppins">IPS LCD Gaming Monitor</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
                             <p class="text-[#DB4444]">$370</p>
@@ -283,7 +293,7 @@
                     </div>
                 </div>
                 <!-- cart 4 -->
-                <div class="w-3/12 ">
+                <div class="lg:w-3/12 ">
                     <div class="relative group">
                         <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-25%
                         </div>
@@ -304,7 +314,7 @@
                             Cart
                         </button>
                     </div>
-                    <div class="mt-4 ml-2">
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
                         <h6 class="font-medium text-base poppins">S-Series Comfort Chair</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
                             <p class="text-[#DB4444]">$375</p>
@@ -323,37 +333,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- cart 5 -->
-                <!-- <div class="relative">
-                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-30%</div>
-                    <div class="flex flex-col gap-1 absolute top-2 right-2">
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
-                                class="w-4 h-4"></button>
-                        <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Quick View.svg" alt=""
-                                class="w-4 h-4"></button>
-                    </div>
-                    <a href="" class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[19px] rounded-md">
-                        <img src="./assets/image/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.svg" alt="">
-                    </a>
-                    <div class="mt-4 ml-2">
-                        <h6 class="font-medium text-base poppins">S-Series Comfort Chair</h6>
-                        <div class="flex flex-row items-center text-base font-medium gap-2">
-                            <p class="text-[#DB4444]">$375</p>
-                            <p class="line-through text-[#808080]">$400</p>
-                        </div>
-                        <div class="flex flex-row items-center">
-                            <div class="flex flex-row">
-                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
-                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
-                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
-                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
-                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
-                                <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
-                            </div>
-                            <p class="text-[#808080]">(99)</p>
-                        </div>
-                    </div>
-                </div> -->
 
             </div>
             <div class="flex flex-row justify-center items-center">
@@ -364,16 +343,16 @@
         </section>
         <hr class="mx-28">
         <!-- categories -->
-        <section class="pb-16 px-28">
+        <section class="lg:pb-16 py-8 px-4 lg:px-28">
             <!-- title -->
-            <div class="py-14">
+            <div class="lg:py-14 py-4">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
                     <p class="text-[#DB4444] text-base font-semibold poppins">Categories</p>
                 </div>
-                <div class="flex flex-row justify-between items-center">
-                    <h4 class="font-semibold text-4xl">Browse By Category</h4>
-                    <div class="flex flex-row gap-2">
+                <div class="block lg:flex flex-row justify-between items-center">
+                    <h4 class="font-semibold text-3xl lg:text-4xl">Browse By Category</h4>
+                    <div class="hidden lg:flex flex-row gap-2">
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector (1).svg" alt=""
                                 class="h-4 w-4">
                         </div>
@@ -383,70 +362,71 @@
                 </div>
             </div>
             <!-- carts -->
-            <div class="flex flex-row gap-7">
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-7">
                 <!-- cart 1 -->
                 <div
-                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
+                    class="lg:w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
                     <img src="./assets/icon/Category-CellPhone.svg" alt="" class="group-hover:hidden">
                     <img src="./assets/icon/Category-CellPhone-hover.svg" alt="" class="hidden group-hover:block">
                     <p class="text-base poppins">Phones</p>
                 </div>
                 <!-- cart 2 -->
                 <div
-                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
+                    class="lg:w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
                     <img src="./assets/icon/Category-Computer.svg" alt="" class="group-hover:hidden">
                     <img src="./assets/icon/Category-Computer-hover.svg" alt="" class="group-hover:block hidden">
                     <p class="text-base poppins">Computers</p>
                 </div>
                 <!-- cart 3 -->
                 <div
-                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
+                    class="lg:w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
                     <img src="./assets/icon/Category-SmartWatch.svg" alt="" class="group-hover:hidden">
                     <img src="./assets/icon/Category-SmartWatch-hover.svg" alt="" class="group-hover:block hidden">
                     <p class="text-base poppins">SmartWatch</p>
                 </div>
                 <!-- cart 4 -->
                 <div
-                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
+                    class="lg:w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
                     <img src="./assets/icon/Category-Camera.svg" alt="" class="group-hover:block hidden">
                     <img src="./assets/icon/Category-Camera-hover.svg" alt="" class="group-hover:hidden">
                     <p class="text-base poppins">Camera</p>
                 </div>
                 <!-- cart 5 -->
                 <div
-                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
+                    class="lg:w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
                     <img src="./assets/icon/Category-Headphone.svg" alt="" class="group-hover:hidden">
                     <img src="./assets/icon/Category-Headphone-hover.svg" alt="" class="group-hover:block hidden">
                     <p class="text-base poppins">HeadPhones</p>
                 </div>
                 <!-- cart 6 -->
                 <div
-                    class="w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
+                    class="lg:w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer">
                     <img src="./assets/icon/Category-Gamepad.svg" alt="" class="group-hover:hidden">
                     <img src="./assets/icon/Category-Gamepad-hover.svg" alt="" class="group-hover:block hidden">
                     <p class="text-base poppins">Gaming</p>
                 </div>
             </div>
         </section>
-        <hr class=" mx-28">
+        <hr class="mx-4 lg:mx-28">
         <!-- Best selling -->
-        <section class="mt-10 mb-20 px-28">
+        <section class="my-6 lg:mt-10 lg:mb-20 px-4 lg:px-28">
             <!-- title -->
-            <div class="py-14">
+            <div class="lg:py-14 py-3">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
                     <p class="text-[#DB4444] text-base font-semibold poppins">This Month</p>
                 </div>
-                <div class="flex flex-row justify-between items-center">
-                    <h4 class="font-semibold text-4xl">Best Selling Products</h4>
-                    <button class="bg-[#DB4444] text-base font-medium py-4 px-12 text-white rounded-sm">View
+                <div class="flex flex-col lg:flex-row justify-between lg:items-center">
+                    <h4 class="font-semibold text-3xl lg:text-4xl">Best Selling Products</h4>
+                    <button
+                        class="bg-[#DB4444] text-base font-medium py-4 px-12 text-white rounded-sm hidden lg:block">View
                         All</button>
                 </div>
             </div>
             <!-- carts -->
-            <div class="flex flex-row gap-6">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-6">
                 <!-- cart 1 -->
-                <div class="w-3/12 ">
+                <div class="lg:w-3/12 ">
                     <div class="relative group">
                         <div class="flex flex-col gap-1 absolute top-2 right-2">
                             <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -465,7 +445,7 @@
                             Cart
                         </button>
                     </div>
-                    <div class="mt-4 ml-2">
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
                         <h6 class="font-semibold text-base">The north coat</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
                             <p class="text-[#DB4444] poppins">$260</p>
@@ -485,7 +465,7 @@
                     </div>
                 </div>
                 <!-- cart 2 -->
-                <div class="w-3/12 ">
+                <div class="lg:w-3/12 ">
                     <div class="relative group">
                         <div class="flex flex-col gap-1 absolute top-2 right-2">
                             <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -494,9 +474,9 @@
                                     class="w-4 h-4"></button>
                         </div>
                         <a href="./pro_details.html"
-                            class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[41px]">
-                            <img src="./assets/image/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.svg"
-                                alt="" class="h-36">
+                            class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px]">
+                            <img src="./assets/image/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.svg"
+                                alt="" class="h-40">
                         </a>
                         <button
                             class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
@@ -504,11 +484,11 @@
                             Cart
                         </button>
                     </div>
-                    <div class="mt-4 ml-2">
-                        <h6 class="font-semibold text-base">Gucci duffle bag</h6>
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
+                        <h6 class="font-semibold text-base">The north coat</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
-                            <p class="text-[#DB4444] poppins">$960</p>
-                            <p class="line-through text-[#808080] poppins">$1160</p>
+                            <p class="text-[#DB4444] poppins">$260</p>
+                            <p class="line-through text-[#808080] poppins">$360</p>
                         </div>
                         <div class="flex flex-row items-center">
                             <div class="flex flex-row">
@@ -516,15 +496,15 @@
                                 <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                 <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
                                 <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
-                                <img src="./assets/icon/Vector (3).svg" alt="" class="h-3 w-3">
+                                <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                                 <img src="./assets/icon/Vector (4).svg" alt="" class="h-3 w-3">
                             </div>
-                            <p class="text-[#808080]">(65)</p>
+                            <p class="text-[#808080] poppins">(35)</p>
                         </div>
                     </div>
                 </div>
                 <!-- cart 3 -->
-                <div class="w-3/12 ">
+                <div class="lg:w-3/12 ">
                     <div class="relative group">
                         <div class="flex flex-col gap-1 absolute top-2 right-2">
                             <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -542,7 +522,7 @@
                             Cart
                         </button>
                     </div>
-                    <div class="mt-4 ml-2">
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
                         <h6 class="font-semibold text-base">RGB liquid CPU Cooler</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
                             <p class="text-[#DB4444] poppins">$160</p>
@@ -562,7 +542,7 @@
                     </div>
                 </div>
                 <!-- cart 4 -->
-                <div class="w-3/12 ">
+                <div class="lg:w-3/12 ">
                     <div class="relative group">
                         <div class="flex flex-col gap-1 absolute top-2 right-2">
                             <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -582,7 +562,7 @@
                         </button>
                     </div>
 
-                    <div class="mt-4 ml-2">
+                    <div class="mt-4 lg:ml-2 flex flex-col items-center">
                         <h6 class="font-semibold text-base">Small BookSelf</h6>
                         <div class="flex flex-row items-center text-base font-medium gap-2">
                             <p class="text-[#DB4444] poppins">$360</p>
@@ -604,18 +584,24 @@
         </section>
 
         <!-- Music Experience -->
-        <section class=" px-28">
-            <div class="flex justify-between items-end">
-                <div class="flex flex-row justify-between">
+        <section class="px-4 lg:px-28">
+            <div class=" bg-black">
+                <!-- mobile only -->
+                <div class="lg:hidden flex-row gap-5 items-center pl-4 pt-4">
+                    <p class="text-[#00ff66] font-semibold text-2xl poppins">Categories</p>
+                </div>
+                <div class="flex flex-col-reverse lg:flex-row justify-between">
+
                     <!-- left -->
-                    <div class="w-6/12 flex flex-col gap-8 bg-black p-12">
-                        <div class="flex flex-row gap-5 items-center">
+                    <div class="lg:w-6/12 flex flex-col gap-8 p-2 lg:p-12">
+                        <div class="lg:flex flex-row gap-5 items-center hidden">
                             <p class="text-[#00ff66] font-semibold text-2xl poppins">Categories</p>
                         </div>
-                        <h1 class="text-white font-semibold text-5xl leading-tight">Enhance Your <br>Music Experience
+                        <h1 class="text-white font-semibold text-3xl lg:text-5xl leading-tight">Enhance Your <br>Music
+                            Experience
                         </h1>
                         <!-- timer -->
-                        <div class="flex flex-row gap-3">
+                        <div class="flex flex-row gap-2 lg:gap-3">
                             <div
                                 class="bg-white flex flex-col justify-center items-center h-[70px] w-[70px] p-1 rounded-full leading-none">
                                 <h3 class="text-base font-semibold">23</h3>
@@ -637,21 +623,20 @@
                                 <p class="text-black text-xs poppins ">Seconds</p>
                             </div>
                         </div>
-                        <button class="py-3 w-fit px-10 text-white rounded bg-[#00ff66]">
+                        <button class="mx-auto lg:mx-0 my-3 py-3 w-fit px-4 lg:px-10 text-white rounded bg-[#00ff66]">
                             Buy Now!
                         </button>
                     </div>
                     <!-- right -->
-                    <div class="bg-black w-6/12 flex flex-row ">
+                    <div class="bg-black w-full lg:w-6/12 flex flex-row ">
                         <img src="./assets/image/JBL_BOOMBOX_2_HERO_020_x1 (1) 1.svg" alt="" class="self-center p-12">
                     </div>
                 </div>
-            </div>
-                  
+            </div>       
         </section>
 
         <!-- Products -->
-        <section class="flex flex-col px-28">
+        <section class="flex flex-col py-6 px-4 lg:px-28">
             <!-- title -->
             <div class="py-14">
                 <div class="flex flex-row items-center gap-4 mb-5">
@@ -659,8 +644,8 @@
                     <p class="text-[#DB4444] text-base font-semibold poppins">Our Products</p>
                 </div>
                 <div class="flex flex-row justify-between items-center">
-                    <h4 class="font-semibold text-4xl">Explore Our Products</h4>
-                    <div class="flex flex-row gap-2">
+                    <h4 class="font-semibold text-3xl lg:text-4xl">Explore Our Products</h4>
+                    <div class="lg:flex flex-row gap-2 hidden">
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector (1).svg" alt=""
                                 class="h-4 w-4"></div>
                         <div class="bg-[#f5f5f5] p-3 rounded-full"><img src="./assets/icon/Vector.svg" alt=""
@@ -671,9 +656,9 @@
             <!-- carts -->
             <div class="flex flex-col gap-10">
                 <!-- cart upper -->
-                <div class="flex flex-row gap-6">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-6">
                     <!-- cart 1 -->
-                    <div class="w-3/12">
+                    <div class="lg:w-3/12">
                         <div class=" relative group">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -692,7 +677,7 @@
                             </button>
 
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">Breed Dry Dog Food</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p class="poppins">$100</p>
@@ -709,7 +694,7 @@
                         </div>
                     </div>
                     <!-- cart 2 -->
-                    <div class="w-3/12 ">
+                    <div class="lg:w-3/12 ">
                         <div class="relative group ">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -729,7 +714,7 @@
                                 Cart
                             </button>
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">CANON EOS DSLR Camera</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p>$360</p>
@@ -746,7 +731,7 @@
                         </div>
                     </div>
                     <!-- cart 3 -->
-                    <div class="w-3/12 ">
+                    <div class="lg:w-3/12 ">
                         <div class="relative group">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -765,7 +750,7 @@
                                 Cart
                             </button>
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">ASUS FHD Gaming Laptop</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p class="poppins">$700</p>
@@ -782,7 +767,7 @@
                         </div>
                     </div>
                     <!-- cart 4 -->
-                    <div class="w-3/12 ">
+                    <div class="lg:w-3/12 ">
                         <div class="relative group">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -801,7 +786,7 @@
                                 Cart
                             </button>
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">Curology Product Set</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p class="poppins">$500</p>
@@ -819,9 +804,9 @@
                     </div>
                 </div>
                 <!-- cart lower -->
-                <div class="flex flex-row gap-6">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-6">
                     <!-- cart 5 -->
-                    <div class="w-3/12 ">
+                    <div class="lg:w-3/12 ">
                         <div class="relative group">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -842,7 +827,7 @@
                                 Cart
                             </button>
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">Kids Electric Car</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p class="poppins">$960</p>
@@ -865,7 +850,7 @@
 
                     </div>
                     <!-- cart 6 -->
-                    <div class="w-3/12 ">
+                    <div class="lg:w-3/12 ">
                         <div class="relative group">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -884,7 +869,7 @@
                                 Cart
                             </button>
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">Jr. Zoom Soccer Cleats</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p class="poppins">$1160</p>
@@ -908,7 +893,7 @@
 
                     </div>
                     <!-- cart 7 -->
-                    <div class="w-3/12 ">
+                    <div class="lg:w-3/12 ">
                         <div class="relative group">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -928,7 +913,7 @@
                                 Cart
                             </button>
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">GP11 Shooter USB Gamepad</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p class="poppins">$660</p>
@@ -951,7 +936,7 @@
 
                     </div>
                     <!-- cart 8 -->
-                    <div class="w-3/12 ">
+                    <div class="lg:w-3/12 ">
                         <div class="relative group">
                             <div class="flex flex-col gap-1 absolute top-2 right-2">
                                 <button class="rounded-full p-2 bg-white"><img src="./assets/icon/Vector (2).svg" alt=""
@@ -971,7 +956,7 @@
                                 Cart
                             </button>
                         </div>
-                        <div class="mt-4 ml-2">
+                        <div class="mt-4 lg:ml-2 flex flex-col items-center">
                             <h6 class="font-semibold text-base">Quilted Satin Jacket</h6>
                             <div class="flex flex-row items-center text-base font-medium gap-2">
                                 <p class="poppins">$660</p>
@@ -1002,18 +987,18 @@
         </section>
 
         <!-- New  arrival -->
-        <section class="py-10 px-28">
+        <section class="py-10 px-4 lg:px-28">
             <!-- title -->
-            <div class="py-14">
+            <div class="py-6 lg:py-14">
                 <div class="flex flex-row items-center gap-4 mb-5">
                     <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
                     <p class="text-[#DB4444] text-base font-semibold poppins">Featured</p>
                 </div>
-                <h4 class="font-semibold text-4xl">New Arrival</h4>
+                <h4 class="font-semibold text-3xl lg:text-4xl">New Arrival</h4>
             </div>
             <!-- carts -->
-            <div class="flex flex-row w-full gap-4">
-                <div class="bg-black w-6/12 rounded-[4px] bg-no-repeat bg-right-bottom h-[570px] relative"
+            <div class="flex flex-col lg:flex-row w-full gap-4">
+                <div class="bg-black lg:w-6/12 rounded-[4px] bg-no-repeat bg-right-bottom h-[570px] relative"
                     style="background-image: url('./assets/image/ps5-slim-goedkope-playstation_large\ 1.svg');">
                     <div class="text-white bottom-6 left-6 absolute">
                         <h5 class="font-semibold text-2xl">PlayStation 5</h5>
@@ -1021,7 +1006,7 @@
                         <a href="" class="text-base font-medium underline">Shop Now</a>
                     </div>
                 </div>
-                <div class="flex flex-col w-6/12 gap-4">
+                <div class="flex flex-col lg:w-6/12 gap-4">
                     <div class="bg-black rounded-[4px] bg-no-repeat bg-center h-[278px] relative"
                         style="background-image: url('./assets/image/attractive-woman-wearing-hat-posing-black-background\ 1.svg');">
                         <div class="text-white bottom-6 left-6 absolute">
@@ -1030,8 +1015,8 @@
                             <a href="" class="text-base font-medium underline">Shop Now</a>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-4 h-[276px]">
-                        <div class="bg-black w-6/12 rounded-[4px] h-full bg-no-repeat bg-center relative"
+                    <div class="flex flex-col lg:flex-row gap-4 h-[276px]">
+                        <div class="bg-black lg:w-6/12 rounded-[4px] h-full bg-no-repeat bg-center relative"
                             style="background-image: url('./assets/image/69-694768_amazon-echo-png-clipart-transparent-amazon-echo-png 1.svg');">
                             <div class="text-white bottom-6 left-6 absolute">
                                 <h5 class="font-semibold text-2xl">Speakers</h5>
@@ -1039,7 +1024,7 @@
                                 <a href="" class="text-base font-medium underline">Shop Now</a>
                             </div>
                         </div>
-                        <div class="bg-black w-6/12 rounded-[4px] h-full bg-no-repeat bg-center relative"
+                        <div class="bg-black lg:w-6/12 rounded-[4px] h-full bg-no-repeat bg-center relative"
                             style="background-image: url('./assets/image/652e82cd70aa6522dd785109a455904c.svg');">
                             <div class="text-white bottom-6 left-6 absolute">
                                 <h5 class="font-semibold text-2xl">Perfume</h5>
@@ -1053,7 +1038,8 @@
         </section>
 
         <!-- service -->
-        <section class="flex flex-row w-fit mx-auto gap-16 py-24 px-28 relative">
+        <section
+            class="flex flex-col lg:flex-row w-fit mx-auto gap-16 pb-14 lg:py-24 px-4 lg:px-28 relative">
             <div class="flex flex-col items-center gap-4">
                 <img src="./assets/icon/Services.svg" alt="">
                 <div class="text-center">
@@ -1075,7 +1061,7 @@
                     <p class="text-sm font-normal poppins">We reurn money within 30 days</p>
                 </div>
             </div>
-            <button class="rounded-full p-2 bg-[#f5f5f5] absolute right-1 bottom-10">
+            <button class="rounded-full p-2 bg-[#f5f5f5] absolute right-1 bottom-10 hidden lg:block">
                 <img src="./assets/icon/icons_arrow-up.svg" alt="" class="">
             </button>
         </section>
@@ -1085,10 +1071,10 @@
     </main>
     <!-- footer -->
     <footer class="w-full bg-black">
-        <div class="max-w-7xl mx-auto pt-10">
-            <div class="flex flex-row items-start justify-between px-28 mb-10">
+        <div class="max-w-7xl mx-auto pt-16 lg:pt-10">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 items-start justify-between px-8 lg:px-28 lg:mb-10">
                 <!-- col 1 -->
-                <div class="w-fit flex flex-col gap-5">
+                <div class="w-fit flex flex-col gap-3 lg:gap-5">
                     <h3 class="text-3xl font-bold text-white ">Exclusive</h3>
                     <h4 class="text-white text-xl font-semibold">Subscribe</h4>
                     <p class="text-white text-[16px] poppins">Get 10% of your first order</p>
@@ -1101,14 +1087,14 @@
                     </div>
                 </div>
                 <!-- col 2 -->
-                <div class="w-fit flex flex-col gap-5">
+                <div class="w-fit flex flex-col gap-3 lg:gap-5">
                     <h4 class="text-white text-2xl font-semibold">Support</h4>
                     <p class="text-white text-base poppins">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
                     <p class="text-white poppins">exclusive@gmail.com</p>
                     <p class="text-white poppins">+88015-88888-9999</p>
                 </div>
                 <!-- col 3 -->
-                <div class="w-fit flex flex-col gap-4">
+                <div class="w-fit flex flex-col gap-3 lg:gap-4">
                     <h4 class="text-white text-2xl font-semibold">Account</h4>
                     <a href="./profile.html" class="text-white text-base">My Account</a>
                     <a href="./login.html" class="text-white text-base">Login/Register</a>
@@ -1117,7 +1103,7 @@
                     <a href="./checkout.html" class="text-white text-base">Shop</a>
                 </div>
                 <!-- col 4 -->
-                <div class="w-fit flex flex-col gap-4">
+                <div class="w-fit flex flex-col gap-3 lg:gap-4">
                     <h4 class="text-white text-2xl font-semibold">Quick Link</h4>
                     <a href="" class="text-white text-base">Privacy Policy</a>
                     <a href="" class="text-white text-base">Terms Of Use</a>
@@ -1125,7 +1111,7 @@
                     <a href="./contact.html" class="text-white text-base">Contact</a>
                 </div>
                 <!-- col 5 -->
-                <div class="w-fit flex flex-col gap-5">
+                <div class="w-fit flex flex-col gap-3 lg:gap-5">
                     <h4 class="text-white text-xl font-medium">Download App</h4>
                     <p class="text-[#afafaf] text-xs font-medium poppins">Save $3 with App New User Only</p>
                     <div class="flex flex-row gap-3">
@@ -1145,7 +1131,8 @@
                     </div>
                 </div>
             </div>
-            <p class="text-[#3D3D3D] text-xl py-2 text-center border-t border-[#141414] poppins">&copy; Copyright
+            <p class="text-[#3D3D3D] text-sm lg:text-xl py-2 text-center border-t border-[#141414] poppins">&copy;
+                Copyright
                 @alemran22
                 2024. All
                 right reserved.</p>
