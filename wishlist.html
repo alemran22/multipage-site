@@ -17,61 +17,87 @@
 
 
 <body class="">
-    <!-- sale adv -->
-    <div class="bg-black">
-        <div class="max-w-7xl mx-auto text-white flex flex-row py-3 px-28 justify-end items-center text-sm gap-[106px]">
-            <div class="flex flex-row gap-2">
-                <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
-                <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
-            </div>
-            <div class="">
-                <select name="language" id="language" class=" bg-transparent poppins font-medium cursor-pointer outline-none">
-                    <option value="English" class="poppins font-medium text-black">English</option>
-                    <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
-                </select>
-            </div>
+<!-- sale adv -->
+<div class="bg-black">
+    <div
+        class="max-w-7xl mx-auto text-white flex flex-col lg:flex-row py-3 lg:px-28 justify-end items-center text-sm lg:gap-[106px]">
+        <div class="flex flex-col lg:flex-row gap-2">
+            <p class="px-2 text-wrap poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+            </p>
+            <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
+        </div>
+        <div class="">
+            <select name="language" id="language"
+                class=" bg-transparent poppins font-medium cursor-pointer outline-none">
+                <option value="English" class="poppins font-medium text-black">English</option>
+                <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
+            </select>
         </div>
     </div>
-    <!-- header -->
-    <header class="max-w-7xl mx-auto px-28 flex flex-row justify-between pt-10 pb-4 border-b-2">
-        <div class="w-[60%] flex flex-row justify-between items-center">
-            <a href="./index.html" class="text-2xl font-bold">Exclusive</a>
-            <div class="flex flex-row gap-6">
-                <a href="./index.html" class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Home</a>
-                <a href="./contact.html"
-                    class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Contact</a>
-                <a href="./about.html" class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">About</a>
-                <a href="./sign_up.html" class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Sign
-                    Up</a>
-            </div>
+</div>
+<!-- header -->
+<header class="max-w-7xl mx-auto w-full lg:px-28 px-2 flex flex-row justify-between pt-10 pb-4 border-b-2">
+    <!-- left -->
+    <div class="lg:w-[60%] w-full flex flex-row justify-between items-center">
+        <a href="./index.html" class="text-2xl font-bold">Exclusive</a>
+        <div class="hidden lg:flex flex-row gap-6">
+            <a href="./index.html"
+                class="text-base poppins underline duration-300 transition px-2 py-1 rounded">Home</a>
+            <a href="./contact.html"
+                class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Contact</a>
+            <a href="./about.html"
+                class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">About</a>
+            <a href="./sign_up.html"
+                class="text-base poppins hover:underline duration-300 transition px-2 py-1 rounded">Sign Up</a>
         </div>
-        <div class="w-[30%] flex flex-row justify-between items-center gap-2">
-            <div class="w-9/12 rounded-sm relative bg-[#F5F5F5]">
-                <input type="text" name="" id="" placeholder="What are you looking for?"
-                    class="poppins text-xs outline-none py-[7px] pl-4 w-full bg-transparent">
-                <img src="./assets/icon/Vector (2)_h.svg" alt="" class="h-3 w-3 absolute right-2 top-2 cursor-pointer">
+        <!-- menu icon -->
+        <button class="lg:hidden block">
+            <img id="burgerMenu" src="./assets/icon/more (3).png" class="w-8 h-8" alt="">
+        </button>
+        <!-- mobile navbar -->
+        <div id="mobileNavSec" class="hidden">
+            <!-- mobile nav menu -->
+            <div id="mobileNavOpen" class="bg-white inset-y-0 left-0  w-8/12 fixed z-20">
+                <div class="flex flex-col text-lg font-medium p-5">
+                    <a href="./index.html" class="hover:bg-slate-400 px-4 py-2 rounded-md">Home</a>
+                    <a href="./about.html" class="hover:bg-slate-400 px-4 py-2 rounded-md">About</a>
+                    <a href="./sign_up.html" class="hover:bg-slate-400 px-4 py-2 rounded-md">Sign Up</a>
+                    <a href="./contact.html" class="hover:bg-slate-400 px-4 py-2 rounded-md">Contact</a>
+                    <a href="./cart.html" class="hover:bg-slate-400 px-4 py-2 rounded-md">Cart</a>
+                    <a href="./wishlist.html" class="bg-slate-400 px-4 py-2 rounded-md">Wishlist</a>
+                </div>
             </div>
-            <div class="w-3/12 flex flex-row justify-around items-center">
-                <a href=""><img src="./assets/icon/Vector (1)_h.svg" alt="" class="h-4"></a>
-                <a href="./cart.html"><img src="./assets/icon/Cart1 with buy.svg" alt="" class="h-5"></a>
-            </div>
+            <div id="mobileNavShadow" class="w-4/12 fixed inset-y-0 right-0 bg-black/30"></div>
         </div>
-    </header>
-    <main class="max-w-7xl mx-auto bg-white w-full py-16 px-28">
+    </div>
+    <!-- right -->
+    <div class="w-[30%] lg:flex flex-row justify-between items-center gap-2 hidden">
+        <div class="w-9/12 rounded-sm relative bg-[#F5F5F5]">
+            <input type="text" name="" id="" placeholder="What are you looking for?"
+                class="poppins text-xs outline-none py-[7px] pl-4 w-full bg-transparent">
+            <img src="./assets/icon/Vector (2)_h.svg" alt="" class="h-3 w-3 absolute right-2 top-2 cursor-pointer">
+        </div>
+        <div class="w-3/12 flex flex-row justify-around items-center">
+            <a href="./wishlist.html"><img src="./assets/icon/Vector (1)_h.svg" alt="" class="h-4"></a>
+            <a href="./cart.html"><img src="./assets/icon/Cart1 with buy.svg" alt="" class="h-5"></a>
+        </div>
+    </div>
+</header>
+    <main class="max-w-7xl mx-auto bg-white w-full lg:py-16 p-4 lg:px-28">
 
         <!-- wishlist -->
-        <section class="">
+        <section class="mt-10">
             <!-- title -->
-            <div class="flex flex-row justify-between items-center pb-16">
+            <div class="flex flex-col lg:flex-row justify-between lg:items-center pb-6 lg:pb-16 gap-4">
                 <h5 class="text-xl poppins">Wishlist (4)</h5>
                 <button
                     class="text-base font-medium px-8 py-3 border-2 border-[#808080] rounded-md hover:bg-red-500 hover:text-white hover:border-red-500 duration-300 transition">Move
                     All To Bag</button>
             </div>
             <!-- carts -->
-            <div class="flex flex-row gap-6 w-full">
+            <div class="flex flex-col lg:flex-row gap-6 w-full p-2 lg:p-0">
                 <!-- cart 1 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
                     <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%</div>
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
                         <button class="rounded-full p-2 bg-white"><img src="./assets/icon/icon-delete.svg" alt=""
@@ -106,7 +132,7 @@
                     </div>
                 </div>
                 <!-- cart 2 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
                         <button class="rounded-full p-2 bg-white"><img src="./assets/icon/icon-delete.svg" alt=""
                                 class="w-4 h-4"></button>
@@ -139,7 +165,7 @@
                     </div>
                 </div>
                 <!-- cart 3 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
                         <button class="rounded-full p-2 bg-white"><img src="./assets/icon/icon-delete.svg" alt=""
                                 class="w-4 h-4"></button>
@@ -172,7 +198,7 @@
                     </div>
                 </div>
                 <!-- cart 4 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
 
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
                         <button class="rounded-full p-2 bg-white"><img src="./assets/icon/icon-delete.svg" alt=""
@@ -212,7 +238,7 @@
 
 
         <!-- just for you -->
-        <section class="mt-20 mb-14">
+        <section class="lg:mt-20 lg:mb-14 my-10">
             <!-- title -->
             <div class="py-14 flex flex-row justify-between items-center">
                 <div class="flex flex-row items-center gap-4 mb-5">
@@ -224,9 +250,9 @@
                     All</button>
             </div>
             <!-- carts -->
-            <div class="flex flex-row gap-6">
+            <div class="flex flex-col lg:flex-row gap-6 p-2 lg:p-0">
                 <!-- cart 1 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
                     <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%</div>
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
 
@@ -261,7 +287,7 @@
                     </div>
                 </div>
                 <!-- cart 2 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
                     <!-- <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%</div> -->
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
 
@@ -296,7 +322,7 @@
                     </div>
                 </div>
                 <!-- cart 3 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
                     <div class="bg-[#00FF66] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">NEW</div>
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
 
@@ -331,7 +357,7 @@
                     </div>
                 </div>
                 <!-- cart 4 -->
-                <div class="w-3/12 relative">
+                <div class="w-full lg:w-3/12 relative">
                     <!-- <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%</div> -->
                     <div class="flex flex-col gap-1 absolute top-2 right-2">
 
@@ -438,6 +464,8 @@
                 right reserved.</p>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
